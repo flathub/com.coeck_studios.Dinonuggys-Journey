@@ -14,7 +14,7 @@ modules:
   - name: Dinonuggys-Journey
     buildsystem: simple
     build-commands:
-      - install -D 7c73ad13-0f83-45bd-b672-2ac13618a74c /app/bin/godot-runner.pck
+      - install -D 82dfcbe3-1ef4-4345-b8c4-d7058ca1cea0 /app/bin/godot-runner.pck
       - install -D LICENSE.md /app/bin/LICENSE.md
       - install -D Icon64x64.png /app/share/icons/hicolor/64x64/apps/com.coeck_studios.Dinonuggys-Journey.png
       - install -D Icon128x128.png /app/share/icons/hicolor/128x128/apps/com.coeck_studios.Dinonuggys-Journey.png
@@ -25,8 +25,8 @@ modules:
       - install -D com.coeck_studios.Dinonuggys-Journey.appdata.xml /app/share/metainfo/com.coeck_studios.Dinonuggys-Journey.appdata.xml
     sources:
       - type: archive
-        url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.59.2.tar.gz
-        sha256: 16b0c76a9b11feedd3cb4a9d9a73eef25a3292e506fa056bd95ac64aecca8c2c
+        url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.60.2.tar.gz
+        sha256: d65df2f55b47c569148b3ecf0aa73f21273a142d003fe534c169ffa71983267e
       - type: file
-        url: https://codeberg.org/attachments/7c73ad13-0f83-45bd-b672-2ac13618a74c
-        sha256: 0aae94ef1974c657b693317d3b8367504bf03ccfd515300cb63f4ab5afe38d12
+        url: https://codeberg.org/attachments/82dfcbe3-1ef4-4345-b8c4-d7058ca1cea0
+        sha256: ff5c14a6c76842bd7ac9541e81d5e3cd5cd61877eebc29bbfb322ee225812259
