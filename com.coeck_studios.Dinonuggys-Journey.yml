@@ -14,19 +14,23 @@ modules:
   - name: Dinonuggys-Journey
     buildsystem: simple
     build-commands:
-      - install -D e8befa4a-4b1a-4fd5-95bc-a6b665f4f3fb /app/bin/godot-runner.pck
+      - install -D 97275955-2e3e-43ba-b5ba-7ee68ea02f00 /app/bin/godot-runner.pck
       - install -D LICENSE.md /app/bin/LICENSE.md
-      - install -D Icon64x64.png /app/share/icons/hicolor/64x64/apps/com.coeck_studios.Dinonuggys-Journey.png
-      - install -D Icon128x128.png /app/share/icons/hicolor/128x128/apps/com.coeck_studios.Dinonuggys-Journey.png
-      - install -D Icon144x144.png /app/share/icons/hicolor/144x144/apps/com.coeck_studios.Dinonuggys-Journey.png
-      - install -D Icon180x180.png /app/share/icons/hicolor/180x180/apps/com.coeck_studios.Dinonuggys-Journey.png
-      - install -D Icon512x512.png /app/share/icons/hicolor/512x512/apps/com.coeck_studios.Dinonuggys-Journey.png
+      - mv de9fe48e-08cb-41c9-b43a-8841510d5043 icons.tar.gz
+      - tar xvf icons.tar.gz
+      - >
+        for icon_width in 128 192 512; do
+          install -D icons/usr/share/icons/hicolor/"$icon_width"x"$icon_width"/apps/dinonuggys-journey.png /app/share/icons/hicolor/"$icon_width"x"$icon_width"/apps/com.coeck_studios.Dinonuggys-Journey.png
+        done
       - install -D com.coeck_studios.Dinonuggys-Journey.desktop /app/share/applications/com.coeck_studios.Dinonuggys-Journey.desktop
       - install -D com.coeck_studios.Dinonuggys-Journey.appdata.xml /app/share/metainfo/com.coeck_studios.Dinonuggys-Journey.appdata.xml
     sources:
       - type: archive
-        url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.61.0.tar.gz
-        sha256: 085e9b53e4184d9cb89462284a9d5da57a19084720b53be2b04bb61ec07c6d28
+        url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.70.1.tar.gz
+        sha256: 1ebf004da26467a76e8cdbbe59a606c872c1fd9d50df57e7a0922191ddfc5e24
       - type: file
-        url: https://codeberg.org/attachments/e8befa4a-4b1a-4fd5-95bc-a6b665f4f3fb
-        sha256: ff5c14a6c76842bd7ac9541e81d5e3cd5cd61877eebc29bbfb322ee225812259
+        url: https://codeberg.org/attachments/97275955-2e3e-43ba-b5ba-7ee68ea02f00
+        sha256: 2db8aa56be30d9fb46cbbcc91fde6f9308e8d2e2cdc7074ce014cee1b8024abb
+      - type: file
+        url: https://codeberg.org/attachments/de9fe48e-08cb-41c9-b43a-8841510d5043
+        sha256: 66cbd1d44bdcf829620d949e797b639c3e2cfea50b99b33434d632aa607fff30
