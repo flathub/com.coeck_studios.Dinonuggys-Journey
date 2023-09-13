@@ -1,8 +1,8 @@
 app-id: com.coeck_studios.Dinonuggys-Journey
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 base: org.godotengine.godot.BaseApp
-base-version: '3.4'
+base-version: '3.5'
 sdk: org.freedesktop.Sdk
 command: godot-runner
 finish-args:
@@ -14,9 +14,8 @@ modules:
   - name: Dinonuggys-Journey
     buildsystem: simple
     build-commands:
-      - install -D b0f1649d-93f8-43c8-9c4a-319805ff3013 /app/bin/godot-runner.pck
+      - install -D godot-runner.pck /app/bin/
       - install -D LICENSE.md /app/bin/LICENSE.md
-      - mv e4a36d2f-6b51-478b-98e1-f5ecf606d2a8 icons.tar.gz
       - tar xvf icons.tar.gz
       - >
         for icon_width in 128 192 512; do
@@ -26,11 +25,11 @@ modules:
       - install -D com.coeck_studios.Dinonuggys-Journey.appdata.xml /app/share/metainfo/com.coeck_studios.Dinonuggys-Journey.appdata.xml
     sources:
       - type: archive
-        url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.70.2.tar.gz
-        sha256: 1ad72c310b967539f43e8d8232209751159606036d55ee10ca18039b5c46cf82
+        url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.70.3.tar.gz
+        sha256: 11321a35778d18f887379e1418a1d066a93953f58dbceeb0a4b06d99e33f5456
       - type: file
-        url: https://codeberg.org/attachments/b0f1649d-93f8-43c8-9c4a-319805ff3013
-        sha256: 073c54fb2214577c1e3a61e528f53a500d799769bc922b1d9b4c7940c03320f2
+        url: https://codeberg.org/CoEck/Dinonuggys-Journey/releases/download/v0.70.3/godot-runner.pck
+        sha256: f65fc31e22b8b7f867b1384736902adeb2892a98985134a8ec1fad82165b2b2a
       - type: file
-        url: https://codeberg.org/attachments/e4a36d2f-6b51-478b-98e1-f5ecf606d2a8
-        sha256: bdf68d1183878a71b598c8fca1aed50aefd3c9a76b98fc3e7323bd8589ceeb5c
+        url: https://codeberg.org/CoEck/Dinonuggys-Journey/releases/download/v0.70.3/icons.tar.gz
+        sha256: 929398caf1029ffb9a411edd51654cab263de9d03f6a9bdb6d1cd2cee2f316ad
