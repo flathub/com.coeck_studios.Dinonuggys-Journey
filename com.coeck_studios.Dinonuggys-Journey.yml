@@ -27,6 +27,8 @@ modules:
       - type: archive
         url: https://codeberg.org/CoEck/Dinonuggys-Journey/archive/v0.70.3.tar.gz
         sha256: 11321a35778d18f887379e1418a1d066a93953f58dbceeb0a4b06d99e33f5456
+      - type: patch
+        path: fix-appdata.patch
       - type: file
         url: https://codeberg.org/CoEck/Dinonuggys-Journey/releases/download/v0.70.3/godot-runner.pck
         sha256: f65fc31e22b8b7f867b1384736902adeb2892a98985134a8ec1fad82165b2b2a

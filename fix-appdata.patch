@@ -1,0 +1,25 @@
+From b705bce6214356a4bfa9934fbcae4420b97850c7 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Mon, 23 Feb 2026 23:59:40 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ com.coeck_studios.Dinonuggys-Journey.appdata.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/com.coeck_studios.Dinonuggys-Journey.appdata.xml b/com.coeck_studios.Dinonuggys-Journey.appdata.xml
+index 529f23b..33f3d78 100644
+--- a/com.coeck_studios.Dinonuggys-Journey.appdata.xml
++++ b/com.coeck_studios.Dinonuggys-Journey.appdata.xml
+@@ -20,7 +20,7 @@
+ 	<screenshots>
+ 		<screenshot type="default">
+ 			<caption>Dinonuggy surrounded by kitchen utensils</caption>
+-			<image type="thumbnail" width="1204" height="538">https://codeberg.org/CoEck/Dinonuggys-Journey/raw/branch/main/screenshot.png</image>
++			<image width="1204" height="538">https://codeberg.org/CoEck/Dinonuggys-Journey/raw/branch/main/screenshot.png</image>
+ 		</screenshot>
+ 		<screenshot>
+ 			<caption>A brief clip of the start of the game. Dinonuggy doesn't make it far. </caption>
+--
+libgit2 1.7.2
+
