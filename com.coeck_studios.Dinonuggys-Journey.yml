@@ -1,8 +1,8 @@
 app-id: com.coeck_studios.Dinonuggys-Journey
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 base: org.godotengine.godot.BaseApp
-base-version: '3.5-24.08'
+base-version: '3.5-25.08'
 sdk: org.freedesktop.Sdk
 command: godot-runner
 finish-args:
